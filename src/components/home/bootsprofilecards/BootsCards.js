@@ -2,6 +2,7 @@ import React from 'react'
 import { bootData }from "./cardsDetails"
 
 const BootsCards = () => {
+  // its my bootstrap
 
   
 
