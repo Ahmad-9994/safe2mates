@@ -4,6 +4,7 @@ import BootsCards from '../components/home/bootsprofilecards/BootsCards'
 import OnlineCards from '../components/home/onlineCards/OnlineCards'
 import ProfileCards from '../components/home/profileCards/ProfileCards'
 import GallaryCards from '../components/home/gallaryCards/GallaryCards'
+import FooterGallary from '../components/home/footerGallary/FooterGallary'
 
 
 
@@ -17,6 +18,7 @@ const Home = () => {
     <OnlineCards />
     <ProfileCards />
     <GallaryCards />
+    <FooterGallary />
     
     </div>
   )
