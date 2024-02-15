@@ -9,6 +9,7 @@ import GallaryCards from '../components/home/gallaryCards/GallaryCards'
 
 
 const Home = () => {
+  // function for xyzhhhh
   return (
     <div>
     <HeroSection />
