@@ -3,6 +3,9 @@ import React from 'react'
 const Footer = () => {
   // its my footer
   return (
+
+    <div>
+  
     <div className='w-[100%] h-auto border bg-[#666F7C] pb-[10rem]'>
 
     <div className='md:w-[75%] w-[90%] h-auto border-b-[1px] m-auto mt-10 flex flex-wrap pb-8 border-dotted'>
@@ -50,6 +53,8 @@ const Footer = () => {
     
     </div>
     <div className='w-[75%] m-auto py-2 text-right'><spam className="text-sm italic font-bold text-white">Get the app</spam><spam className="px-2 text-white"><i class="fab fa-apple"></i></spam><spam className="text-white"><i class="fab fa-android"></i></spam></div>
+    </div>
+
     </div>
   )
 }
