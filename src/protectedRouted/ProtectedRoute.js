@@ -4,12 +4,10 @@ import { useNavigate } from 'react-router-dom'
 
 const ProtectedRoute = ({children}) => {
    const navigate = useNavigate();
-  const {islogin} = useContext(globalData)
+  const userId=localStorage.getItem("id")
+  console.log(userId)
 
- 
-    console.log("IS LOGIN: ", islogin)
-
-    if(islogin){
+    if(userId){
     return children
   }
   else{

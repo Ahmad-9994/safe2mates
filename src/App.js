@@ -13,6 +13,9 @@ import MarineSupplyScreen from "./screen/MarineSupplyScreen";
 import ProtectedRoute from "./protectedRouted/ProtectedRoute";
 import { Toaster } from 'react-hot-toast';
 import toast from 'react-hot-toast';
+import SingleBlogsScreen from "./screen/SingleBlogsScreen";
+import Addblog from "./components/myblogs/Add-blog";
+import MyBlogScreen from "./screen/MyBlogScreen";
 
 
 function App() {
@@ -24,7 +27,7 @@ function App() {
 
       <Routes>
         <Route
-          path="/home"
+          path="/"
           element={
             <ProtectedRoute>
               <HomeScreen />
@@ -33,7 +36,8 @@ function App() {
         />
 
         <Route path="/contactus" element={<ContactScreen />} />
-        <Route path="/blogs" element={<BlogScreen />} />
+        <Route path="/all-blogs" element={<BlogScreen />} />
+        <Route path="/all-blogs/singleblog/:id" element={<SingleBlogsScreen />} />
         <Route
           path="/Marine-Service"
           element={
@@ -52,9 +56,13 @@ function App() {
         />
         <Route path="/login" element={<LoginScreen />} />
         <Route path="/registration" element={<RegistrationScreen />} />
+        <Route path="/my-blogs/add-blog" element={<Addblog />}/>
+         <Route path="/my-blogs" element={<MyBlogScreen />}/>
       </Routes>
-
+      
+  
       <Footer />
+
 
       
     </div>

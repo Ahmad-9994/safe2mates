@@ -4,24 +4,15 @@ import toast from 'react-hot-toast';
 const globalData = createContext();
 
 const Context = ({ children }) => {
-  const [islogin, setIsLogin] = useState(false);
+  const [isUserId, setIsUserId] = useState();
+    const [visible, setVisible] = useState(false);
 
-  function login() {
-    toast.success("user successfully login")
-      setIsLogin(true);
-  };
-
-  const logout = () => {
-      toast.success("user successfully logout")
-    setIsLogin(false);
-  };
+ 
 
 
-
-  ////////////////////////////////all user record//////////
-  const[alluser ,setAllUser]=useState([])
+ 
   return (
-    <globalData.Provider value={{islogin,setIsLogin, login ,logout,alluser,setAllUser}}>
+    <globalData.Provider value={{visible,setVisible}}>
       {children}
     </globalData.Provider>
   );
